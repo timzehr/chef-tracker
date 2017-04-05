@@ -5,6 +5,13 @@ module.exports = function(environment) {
     modulePrefix: 'chef-tracker',
     environment: environment,
     rootURL: '/',
+    firebase: {
+      apiKey: "AIzaSyCpT50qjnWlpwjLbZZFllB7DsjzjG6v2wQ",
+      authDomain: "chef-tracker-13f96.firebaseapp.com",
+      databaseURL: "https://chef-tracker-13f96.firebaseio.com",
+      storageBucket: "chef-tracker-13f96.appspot.com",
+      messagingSenderId: "824635724738"
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
