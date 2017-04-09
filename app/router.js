@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('chefs');
   this.route('about');
   this.route('training');
+  this.route('chef', 'chefs/:food_id');
 });
 
 export default Router;
