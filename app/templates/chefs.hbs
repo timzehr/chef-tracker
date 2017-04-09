@@ -1,0 +1,21 @@
+<h1>Chef Tracker</h1>
+<p>{{numChefsCooking.length}} of our {{model.length}} chefs are cooking right now!</p>
+<ul>
+  {{#each model as |chef|}}
+    {{#if chef.isCookingToday}}
+      <li class="available">
+        {{chef.name}}
+        <button {{action 'makeUnavailable' chef}}>Exit</button>
+      </li>
+    {{else}}
+      <li class="unavailable">
+        {{chef.name}}
+        <button {{action 'makeAvailable' chef}}>Enter</button>
+        <button {{action 'fireChef' chef}}>Fire</button>
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+<hr>
+{{input value=newChef}}
+<button {{action 'saveNewChef' newChef}}>add chef</button>
