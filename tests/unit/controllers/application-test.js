@@ -12,8 +12,8 @@ test('should increment number of students', function(assert) {
   let controller = this.subject();
 
   let chef = {
-    numStudents: 5
-    isSaved: false
+    numStudents: 5,
+    isSaved: false,
     save() {
       isSaved = true;
     }
